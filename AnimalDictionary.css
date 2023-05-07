@@ -292,15 +292,15 @@
  } 
  @media (max-width: 425px) {
     .results-container {
-        scale: 0.30 ;
+        scale: 0.26;
      }
      .Welcome {
-         scale: 0.30;
+         scale: 0.26;
      }
  } 
  @media (max-width: 320px) {
     .results-container {
-        scale: 0.22 ;
+        scale: 0.22;
      }
      .Welcome {
          scale: 0.22;
