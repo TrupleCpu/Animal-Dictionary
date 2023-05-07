@@ -300,10 +300,10 @@
  } 
  @media (max-width: 320px) {
     .results-container {
-        scale: 0.22;
+        scale: 0.18;
      }
      .Welcome {
-         scale: 0.22;
-     }
+         scale: 0.18;
+    }
  } 
   
