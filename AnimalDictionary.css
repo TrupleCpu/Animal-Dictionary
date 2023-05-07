@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+    border: none;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: gray;
+    background-image: url('jungle.jpg');
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.header {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-area {
+    box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.8);
+    width: 600px;
+    height: 60px;
+   position: relative;
+}
+.search-area button {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    font-size: 30px;
+    cursor: pointer;
+    background: transparent;
+}
+.search-area button:active {
+   scale: .90;
+}
+.search-area #Close {
+    right: 0;
+}
+.search-area input {
+    width: 100%;
+    height: 100%;
+   border-radius: 5px;
+   padding-left: 50px;
+   font-size: 25px;
+   font-weight: 900;
+}
+.results-container {
+    width: 1400px;
+    height: 650px;
+    border: solid 2px black;
+    margin-top: -2px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    visibility: hidden;
+}
+.image-area {
+    top: 0px;
+    position: absolute;
+    width: 996px;
+    left: 0;
+    height: 100%;
+    background-color: whitesmoke;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.image-area img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.Details {
+    width: 500px;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    right: 0px;
+    display: flex;
+   color: white;
+    flex-direction: column;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.Classification {
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Animal-name {
+    position: absolute;
+    margin-top: 40px;
+    font-size: 35px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.Animal-name button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+.Animal-name button:active {
+    scale: 0.90;
+}
+.Slogan {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 80px;
+    font-size: 30px;
+}
+.Facts {
+    width: 450px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.titles {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 25px;
+}
+.lifespan,
+.speed,
+.height,
+.weight {
+    width: 90%;
+    height: 50px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px black;
+    display: flex;
+    gap: 60px;
+    font-weight: 600;
+}
+.loader {
+    width: 100%;
+    height: 100%;
+    animation: loaders 1s ease infinite;
+}
+.image-load {
+    width: 200px;
+    border-radius: 50%;
+    border: solid 5px transparent;
+    border-top-color: black;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    right: 50%;
+    bottom: 50%;
+    height: 200px;
+    animation: loading 1s ease-in-out infinite;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+@keyframes loaders {
+    0% {
+      background-color: hsl(0, 0%, 2%);
+    }
+    100% {
+      background-color: hsl(0, 1%, 26%);
+    }
+  }
+  .Welcome {
+    width: 1400px;
+    height: 650px;
+    border: solid 2px rgba(166, 164, 164, .5);
+    background-color: rgba(166, 164, 164, .5);
+    margin-top: -2px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    cursor: default;
+  }
+  .error-message {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+  }
+  .error-message img {
+    pointer-events: none;
+    width: 400px;
+    height: 400px;
+  }
+  .alert {
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    left: -2000px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .15s;
+    animation: lively 1s ease infinite ;
+  }
+  .alert button {
+    position: absolute;
+    right:  0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+   
+  }
+  .alert button:active{
+    scale: 0.90;
+  }
+  .alert span {
+    font-weight: 900;
+  }
+
+  @keyframes lively {
+    0%,100% {
+        scale: 1;
+    }
+    50% {
+        scale: 0.90;
+    }
+  }
+  @media (max-width: 1024px) {
+    .results-container {
+       scale: 0.70;
+    }
+    .Welcome {
+        scale: 0.70;
+    }
+}
+ @media (max-width: 768px) {
+    .results-container {
+        scale: 0.55;
+     }
+     .Welcome {
+         scale: 0.55;
+     }
+ } 
+ @media (max-width: 425px) {
+    .results-container {
+        scale: 0.30 ;
+     }
+     .Welcome {
+         scale: 0.30;
+     }
+ } 
+ @media (max-width: 320px) {
+    .results-container {
+        scale: 0.22 ;
+     }
+     .Welcome {
+         scale: 0.22;
+     }
+ } 
+  
