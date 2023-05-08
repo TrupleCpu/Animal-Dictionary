@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Varela+Round&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals Dictionary </title>
+    <script src="https://kit.fontawesome.com/251144cd57.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Varela Round", sans-serif;
+            border: none;
+            box-sizing: border-box;
+            outline: none;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-image:url("loginanimal.png");
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+           
+        }
+        form {
+            width:  425px;
+            margin-left: -35px;
+            height: 425px;
+            margin-top: -62px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 50px;
+            position: relative;
+        }
+        form h1 {
+            position: absolute;
+            top: 10px;
+            font-weight: 900;
+        }
+        form input {
+            background-color: gainsboro;
+            width: 280px;
+           height: 50px;
+           border-radius: 20px;
+           padding-left: 20px;
+           font-size: 18px;
+        }
+        form .User {
+            display: flex;
+           gap: 5px;
+           font-size: 30px;
+           align-items: center;
+           margin-left: -30px;
+        }
+        form .Password {
+            display: flex;
+           gap: 5px;
+           align-items: center;
+            margin-left: -30px;
+            font-size: 30px;
+        }
+       label i {
+        color: gray;
+       }
+       form button {
+        width: 140px;
+        height: 35px;
+        font-size: 18px;
+        color: white;
+        font-weight: 600;
+        background-color: rgb(8, 128, 36);
+        border-radius: 10px;
+        cursor: pointer;
+       }
+       form button:active {
+        scale: .90;
+       }
+       @media (max-width: 1024px) {
+          form {
+            scale: 0.90;
+          }
+       }
+       @media (max-width: 375px) {
+          form {
+            scale: 0.80;
+          }
+       }
+       @media (max-width: 320px) {
+          form {
+            scale: 0.60;
+            margin-left: 20px;
+          }
+       }
+        </style>
+</head>
+<body>
+    <div class="container">
+       <form action="">
+        <h1>Sign In</h1>
+        <div class="User">
+            <label for="User"><i class="fa-solid fa-user"></i></label>
+            <input type="text" name="User" id="User">
+        </div>
+        <div class="Password">
+            <label for="Password"><i class="fa-solid fa-lock"></i></label>
+            <input type="password" name="Password" id="Password">
+        </div>
+        <button>Log In</button>
+       </form>
+    </div>
+</body>
+</html>
